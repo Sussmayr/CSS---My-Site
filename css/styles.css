@@ -1,4 +1,4 @@
-body{
+body {
     color: #40544E;
     background-color: white;
     margin: 0;
@@ -10,25 +10,26 @@ body{
 h1 {
     color: #66BFBF;
     /*font-size: 90px;*/
-    font-size: 5.625rem; /* 100% = 16px (90px/16px = 562.5) */
+    font-size: 5.625rem;
+    /* 100% = 16px (90px/16px = 562.5) */
     font-family: 'Sacramento', cursive;
     line-height: normal;
     margin-top: 50 auto;
 }
 
-h2{
+h2 {
     color: #66BFBF;
     font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
 
-h3{
+h3 {
     color: #11999E;
     font-family: 'Montserrat', sans-serif;
 }
 
-a{
+a {
     color: #11999E;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -36,12 +37,12 @@ a{
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     color: #EAF6F6;
     font-weight: bold;
 }
 
-p{
+p {
     line-height: 2;
 }
 
@@ -52,27 +53,37 @@ hr {
     margin: 50px auto;
 }
 
+h1 {
+    color: #66BFBF;
+    /*font-size: 90px;*/
+    font-size: 5.625rem;
+    /* 100% = 16px (90px/16px = 562.5) */
+    font-family: 'Sacramento', cursive;
+    line-height: normal;
+    margin-top: 50 auto;
+}
+
 /*** images class ****/
 
-.bottom-cloud{
+.bottom-cloud {
     position: absolute;
     left: 250px;
     bottom: 300px;
 }
 
-.top-cloud{
+.top-cloud {
     position: absolute;
     right: 300px;
-    top: 30px;
+    top: 100px;
 }
 
-.code-image{
+.code-image {
     width: 25%;
     float: left;
     margin-right: 30px;
 }
 
-.working-image{
+.working-image {
     width: 25%;
     float: right;
     margin-right: 30px;
@@ -99,9 +110,9 @@ hr {
     font-size: 20px;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
-  }
-  
-  .btn:hover {
+}
+
+.btn:hover {
     background: #30e3cb;
     background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
     background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
@@ -109,9 +120,55 @@ hr {
     background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
     background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
     text-decoration: none;
-  }
+}
 
 /*** Div containers ****/
+
+.navbar {
+    background-color: #66BFBF;
+    color: #EAF6F6;
+}
+
+.nav-scroller {
+    z-index: 2;
+    overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow: hidden;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+.navbar-brand {
+    color: #11999E;
+    font-size: 2rem;
+    font-family: 'Sacramento', cursive;
+    line-height: normal;
+}
+
+.navbar-brand:hover {
+    color: #EAF6F6;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin: 10px 20px;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #EAF6F6;
+    font-weight: bold;
+}
 
 .top-container {
     background-color: #EAF6F6;
@@ -119,35 +176,35 @@ hr {
     padding-top: 100px;
 }
 
-.middle-container{
+.middle-container {
     margin: 60px 0;
 }
 
-.bottom-container{
+.bottom-container {
     background-color: #66BFBF;
     position: relative;
     padding-top: 40px;
     padding-bottom: 10px;
 }
 
-.skill-row{
+.skill-row {
     width: 50%;
     margin: 100px auto 100px auto;
     text-align: left;
     line-height: 2;
 }
 
-.intro{
+.intro {
     width: 30%;
     margin: auto;
 }
 
-.contact-message{
+.contact-message {
     width: 40%;
     margin: 40px auto 60px;
 }
 
-.copyright{
+.copyright {
     color: #EAF6F6;
     font-size: 0.75rem;
     padding: 20px 0;
@@ -155,13 +212,13 @@ hr {
 
 
 ol {
-    counter-reset: li; 
-    list-style: none; 
+    counter-reset: li;
+    list-style: none;
     padding: 0;
-    text-shadow: 0 1px 0 rgba(255,255,255,.5);
-  }
-  
-  ol a {
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+}
+
+ol a {
     position: relative;
     display: block;
     padding: .4em .4em .4em 2em;
@@ -171,11 +228,17 @@ ol {
     text-decoration: none;
     border-radius: .3em;
     transition: .3s ease-out;
-  }
-  
-  ol a:hover { background: #30e3cb; }
-  ol a:hover:before { transform: rotate(360deg); }
-  ol a:before {
+}
+
+ol a:hover {
+    background: #30e3cb;
+}
+
+ol a:hover:before {
+    transform: rotate(360deg);
+}
+
+ol a:before {
     content: counter(li);
     counter-increment: li;
     position: absolute;
@@ -191,6 +254,4 @@ ol {
     font-weight: bold;
     border-radius: 2em;
     transition: all .3s ease-out;
-  }
-
-
+}
